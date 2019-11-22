@@ -10,8 +10,8 @@ public class FlightTest {
 
     @Before
     public void before(){
-        passenger1 = new Passenger("Cameron", 2);
-        flight = new Flight(PlaneType.BOEING757, 3, "edinburgh",
+        passenger1 = new Passenger("Cameron", 2, flight);
+        flight = new Flight(PlaneType.LOCKHEEDL12A, 3, "edinburgh",
                 "JFK", "1300");
     }
 
@@ -21,7 +21,7 @@ public class FlightTest {
     }
     @Test
     public void planeHasType(){
-        assertEquals(PlaneType.BOEING757, flight.getPlaneType());
+        assertEquals(PlaneType.LOCKHEEDL12A, flight.getPlaneType());
     }
 
     @Test

@@ -11,9 +11,9 @@ public class FlightManagerTest {
 
     @Before
     public void before(){
-        flight = new Flight(PlaneType.BOEING757, 3, "edinburgh",
+        flight = new Flight(PlaneType.LOCKHEEDL12A, 3, "edinburgh",
                 "JFK", "1300");
-        passenger1 = new Passenger("Cameron", 2);
+        passenger1 = new Passenger("Cameron", 2, flight);
         flightManager = new FlightManager(flight, passenger1);
     }
 
