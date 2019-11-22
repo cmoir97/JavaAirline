@@ -31,4 +31,9 @@ public class FlightTest {
         assertEquals("JFK", flight.getDepartureAirport());
         assertEquals("1300", flight.getDepartureTime());
     }
+
+    @Test
+    public void canGetNumberOfAvailableSeats(){
+        assertEquals(10, flight.numberOfAvailableSeats());
+    }
 }
