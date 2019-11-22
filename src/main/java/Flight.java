@@ -9,6 +9,7 @@ public class Flight {
     private String destination;
     private String departureAirport;
     private String departureTime;
+    private ArrayList<Integer> allocatedSeatNumbers;
 
     public Flight(PlaneType plane, int flightNumber, String destination,
                   String departureAirport, String departureTime){
@@ -18,6 +19,7 @@ public class Flight {
         this.destination = destination;
         this.departureAirport = departureAirport;
         this.departureTime = departureTime;
+        this.allocatedSeatNumbers = new ArrayList<Integer>();
     }
 
     public int passengerCount() {
@@ -66,4 +68,18 @@ public class Flight {
         }
         return totalBags;
      }
+
+     public ArrayList<Integer> getAllocatedSeatNumbers(){
+        return this.allocatedSeatNumbers;
+     }
+
+    public void OnlyAssignUniqueSeats(Passenger passenger, int seatNumber){
+            if (!this.allocatedSeatNumbers.contains(seatNumber)){
+                this.allocatedSeatNumbers.add(seatNumber);
+            }
+        }
+
+    public int AllocatedSeatNumbersLength() {
+        return this.allocatedSeatNumbers.size();
+    }
 }

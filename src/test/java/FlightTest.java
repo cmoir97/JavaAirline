@@ -42,4 +42,11 @@ public class FlightTest {
         flight.addPassenger(passenger1);
         assertEquals(1, flight.passengerCount());
     }
+
+    @Test
+    public void canOnlyAddUniqueSeats(){
+        flight.getAllocatedSeatNumbers().add(4);
+        flight.OnlyAssignUniqueSeats(passenger1, 4);
+        assertEquals(1, flight.AllocatedSeatNumbersLength());
+    }
 }
