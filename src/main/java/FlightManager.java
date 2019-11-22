@@ -19,4 +19,10 @@ public class FlightManager {
     public int remainingBaggageWeight(){
         return this.flight.getMaxWeight() - bookedBaggageWeight();
     }
+
+    public void bookPassengerOnFlight(Passenger newPassenger, Flight flight, int newSeatNumber){
+        flight.addPassenger(passenger);
+        passenger.assignFlight(flight);
+        passenger.assignSeatNumber(newSeatNumber);
+    }
 }
