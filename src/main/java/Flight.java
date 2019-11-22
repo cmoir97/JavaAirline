@@ -54,4 +54,8 @@ public class Flight {
             this.passengers.add(passenger);
         }
     }
+
+    public int getMaxWeight(){
+        return this.plane.getMaxWeight();
+    }
 }
