@@ -23,4 +23,12 @@ public class PlaneTest {
     public void planeHasType(){
         assertEquals(PlaneType.BOEING757, plane.getPlaneType());
     }
+
+    @Test
+    public void planeHasOtherAttributes(){
+        assertEquals(3, plane.getFlightNumber());
+        assertEquals("edinburgh", plane.getDestination());
+        assertEquals("JFK", plane.getDepartureAirport());
+        assertEquals("1300", plane.getDepartureTime());
+    }
 }
