@@ -30,4 +30,7 @@ public class Passenger {
     public int getSeatNumber(){
         return this.seatNumber;
     }
+    public void assignSeatNumber(int newSeatNumber){
+        this.seatNumber = newSeatNumber;
+    }
 }

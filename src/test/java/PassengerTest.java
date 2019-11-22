@@ -37,4 +37,10 @@ public class PassengerTest {
     public void canGetSeatNumber(){
         assertEquals(0, passenger1.getSeatNumber());
     }
+
+    @Test
+    public void canChangeSeatNumber(){
+        passenger1.assignSeatNumber(3);
+        assertEquals(3, passenger1.getSeatNumber());
+    }
 }
