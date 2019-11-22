@@ -58,4 +58,11 @@ public class Flight {
     public int getMaxWeight(){
         return this.plane.getMaxWeight();
     }
+    public int totalNumberOfBags(){
+        int totalBags = 0;
+        for (Passenger passenger : this.passengers){
+            totalBags += passenger.getNumberOfBags();
+        }
+        return totalBags;
+     }
 }
