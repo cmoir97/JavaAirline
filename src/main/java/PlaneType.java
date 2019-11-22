@@ -8,5 +8,12 @@ public enum PlaneType {
         this.capacity = capacity;
         this.maxWeight = maxWeight;
     }
+    public int getCapacity(){
+        return capacity;
+    }
+
+    public int getMaxWeight(){
+        return maxWeight;
+    }
 }
 
