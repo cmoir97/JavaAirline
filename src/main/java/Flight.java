@@ -48,4 +48,8 @@ public class Flight {
         int passengers = this.passengers.size();
         return capacity - passengers;
     }
+
+    public void addPassenger(Passenger passenger) {
+        this.passengers.add(passenger);
+    }
 }
