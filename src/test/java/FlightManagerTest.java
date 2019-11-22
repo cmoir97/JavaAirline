@@ -28,4 +28,10 @@ public class FlightManagerTest {
         flight.addPassenger(passenger1);
         assertEquals(10, flightManager.bookedBaggageWeight());
     }
+
+    @Test
+    public void getRemainingBaggageWeight(){
+        flight.addPassenger(passenger1);
+        assertEquals(90, flightManager.remainingBaggageWeight());
+    }
 }

@@ -15,4 +15,8 @@ public class FlightManager {
     public int bookedBaggageWeight() {
         return (this.flight.passengerCount() * this.flight.totalNumberOfBags()) * 5;
     }
+
+    public int remainingBaggageWeight(){
+        return this.flight.getMaxWeight() - bookedBaggageWeight();
+    }
 }
