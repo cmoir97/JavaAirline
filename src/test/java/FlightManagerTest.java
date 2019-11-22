@@ -13,7 +13,7 @@ public class FlightManagerTest {
     public void before(){
         flight = new Flight(PlaneType.LOCKHEEDL12A, 3, "edinburgh",
                 "JFK", "1300");
-        passenger1 = new Passenger("Cameron", 2, flight);
+        passenger1 = new Passenger("Cameron", 2, flight, 0);
         flightManager = new FlightManager(flight, passenger1);
     }
 

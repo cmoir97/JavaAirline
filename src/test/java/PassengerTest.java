@@ -11,7 +11,7 @@ public class PassengerTest {
     @Before
     public void before(){
 
-        passenger1 = new Passenger("Cameron", 2, null);
+        passenger1 = new Passenger("Cameron", 2, null, 0);
         flight = new Flight(PlaneType.LOCKHEEDL12A, 3, "edinburgh",
                 "JFK", "1300");
     }
@@ -31,5 +31,10 @@ public class PassengerTest {
         flight.addPassenger(passenger1);
         passenger1.assignFlight(flight);
         assertEquals(flight, passenger1.getFlight());
+    }
+
+    @Test
+    public void canGetSeatNumber(){
+        assertEquals(0, passenger1.getSeatNumber());
     }
 }

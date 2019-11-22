@@ -10,7 +10,7 @@ public class FlightTest {
 
     @Before
     public void before(){
-        passenger1 = new Passenger("Cameron", 2, flight);
+        passenger1 = new Passenger("Cameron", 2, flight, 0);
         flight = new Flight(PlaneType.LOCKHEEDL12A, 3, "edinburgh",
                 "JFK", "1300");
     }
