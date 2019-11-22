@@ -22,4 +22,8 @@ public class Plane {
     public int passengerCount() {
         return this.passengers.size();
     }
+
+    public PlaneType getPlaneType() {
+        return this.plane;
+    }
 }
