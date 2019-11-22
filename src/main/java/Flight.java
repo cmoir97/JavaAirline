@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Plane {
+public class Flight {
 
     private ArrayList<Passenger> passengers;
     private PlaneType plane;
@@ -9,7 +9,7 @@ public class Plane {
     private String departureAirport;
     private String departureTime;
 
-    public Plane(PlaneType plane, int flightNumber, String destination,
+    public Flight(PlaneType plane, int flightNumber, String destination,
                  String departureAirport, String departureTime){
         this.passengers = new ArrayList<Passenger>();
         this.plane = plane;
