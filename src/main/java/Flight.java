@@ -73,7 +73,7 @@ public class Flight {
         return this.allocatedSeatNumbers;
      }
 
-    public void OnlyAssignUniqueSeats(Passenger passenger, int seatNumber){
+    public void bookSeat(Passenger passenger, int seatNumber){
             if (!this.allocatedSeatNumbers.contains(seatNumber)){
                 this.allocatedSeatNumbers.add(seatNumber);
             }

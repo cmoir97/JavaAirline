@@ -20,18 +20,10 @@ public class FlightManager {
         return this.flight.getMaxWeight() - bookedBaggageWeight();
     }
 
-//    public void OnlyAssignUniqueSeats(Passenger passenger, Flight flight){
-//        for (int seatNumber : flight.getAllocatedSeatNumbers()){
-//            if (!flight.getAllocatedSeatNumbers().contains(seatNumber)){
-//                flight.getAllocatedSeatNumbers().add(seatNumber);
-//            }
-//        }
-//    }
-
     public void bookPassengerOnFlight(Passenger newPassenger, Flight flight, int newSeatNumber){
         flight.addPassenger(passenger);
         passenger.assignFlight(flight);
         passenger.assignSeatNumber(newSeatNumber);
-        flight.OnlyAssignUniqueSeats(passenger, newSeatNumber);
+        flight.bookSeat(passenger, newSeatNumber);
     }
 }

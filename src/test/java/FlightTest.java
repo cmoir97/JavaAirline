@@ -46,7 +46,7 @@ public class FlightTest {
     @Test
     public void canOnlyAddUniqueSeats(){
         flight.getAllocatedSeatNumbers().add(4);
-        flight.OnlyAssignUniqueSeats(passenger1, 4);
+        flight.bookSeat(passenger1, 4);
         assertEquals(1, flight.AllocatedSeatNumbersLength());
     }
 }
